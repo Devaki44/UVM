@@ -1,13 +1,6 @@
-module dff(
-  input clk,
-  input rst,
-  input d,
-  output reg q);
+module  fa(
+  input a,b,cin,
+  output sum,cout);
   
-  always@(posedge clk)begin
-    if(rst)
-      q <= 0;
-    else
-      q <= d;
-  end
+  assign {cout,sum} = a+b+cin ;
 endmodule
