@@ -40,7 +40,7 @@ module testbench;
     $monitor("clk = %0d, rst = %0b ,d=%0b ,q=%0b",sintf.clk,sintf.rst,sintf.d,sintf.q);
     $dumpfile("dump.vcd");
     $dumpvars;
-    #100;
+    #1000;
     $finish;
   end
   
