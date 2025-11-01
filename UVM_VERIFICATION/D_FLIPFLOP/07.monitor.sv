@@ -33,6 +33,7 @@ class monitor extends uvm_monitor;
       tx.rst = vintf.rst ;
       tx.d   = vintf.d   ;
       tx.q   = vintf.q   ;
+      #1;
       port_tx.write(tx);
       end
     end
